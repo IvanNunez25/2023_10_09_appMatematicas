@@ -14,6 +14,7 @@
 		E6F66AF72AD45F9000B8C74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F66AF62AD45F9000B8C74E /* Assets.xcassets */; };
 		E6F66AFA2AD45F9000B8C74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F66AF82AD45F9000B8C74E /* LaunchScreen.storyboard */; };
 		E6F66AFD2AD45F9000B8C74E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F66AFC2AD45F9000B8C74E /* main.m */; };
+		E6F66B072AD462FB00B8C74E /* Matematicas.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F66B052AD462FB00B8C74E /* Matematicas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E6F66AF92AD45F9000B8C74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6F66AFB2AD45F9000B8C74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F66AFC2AD45F9000B8C74E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6F66B052AD462FB00B8C74E /* Matematicas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matematicas.m; sourceTree = "<group>"; };
+		E6F66B062AD462FB00B8C74E /* Matematicas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matematicas.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		E6F66AE92AD45F8E00B8C74E /* 2023_10_09_appMatematicas */ = {
 			isa = PBXGroup;
 			children = (
+				E6F66B062AD462FB00B8C74E /* Matematicas.h */,
+				E6F66B052AD462FB00B8C74E /* Matematicas.m */,
 				E6F66AEA2AD45F8E00B8C74E /* AppDelegate.h */,
 				E6F66AEB2AD45F8E00B8C74E /* AppDelegate.m */,
 				E6F66AED2AD45F8E00B8C74E /* SceneDelegate.h */,
@@ -148,6 +153,7 @@
 			files = (
 				E6F66AF22AD45F8E00B8C74E /* ViewController.m in Sources */,
 				E6F66AEC2AD45F8E00B8C74E /* AppDelegate.m in Sources */,
+				E6F66B072AD462FB00B8C74E /* Matematicas.m in Sources */,
 				E6F66AFD2AD45F9000B8C74E /* main.m in Sources */,
 				E6F66AEF2AD45F8E00B8C74E /* SceneDelegate.m in Sources */,
 			);
