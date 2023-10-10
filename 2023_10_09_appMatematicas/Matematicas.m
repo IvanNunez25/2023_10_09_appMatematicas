@@ -24,7 +24,7 @@
     
     resul = [NSNumber numberWithFloat:product];
 }
-
+/*
 - (void)multiplya:(NSNumber *)a withB:(NSNumber *)b resultadoEn:(NSNumber **)resul {
     float number1 = [a floatValue];
     float number2 = [b floatValue];
@@ -32,7 +32,7 @@
     
     *resul = [NSNumber numberWithFloat:product];
 }
-
+*/
 - (void)multiplyAa:(NSNumber *)a withB:(NSNumber *)b resultadoEn:(double *)resul {
     double number1 = [a doubleValue];
     double number2 = [b doubleValue];

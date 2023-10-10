@@ -33,6 +33,8 @@
 
 /* Botones */
 
+- (IBAction)botonPotencia:(UIButton *)sender;
+- (IBAction)botonFactorial:(UIButton *)sender;
 
 @end
 
@@ -64,4 +66,26 @@
     
 }
 
+- (IBAction)botonFactorial:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    int factorial = [mat factorial:[_textoNum1.text intValue]];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%d", factorial];
+    
+}
+
+- (IBAction)botonPotencia:(UIButton *)sender {
+    
+    float x = [_textoNum1.text floatValue];
+    double potencia = pow(x, [_textoNum2.text doubleValue]);
+    
+    /* Sin redondear */
+    self.labelResultado1.text =[NSString stringWithFormat:@"%lf", potencia];
+    
+    /* Redondeado */
+    _labelResultado2.text = [NSString stringWithFormat:@"%0.0f", potencia];
+    
+}
 @end

@@ -15,6 +15,7 @@
 		E6F66AFA2AD45F9000B8C74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F66AF82AD45F9000B8C74E /* LaunchScreen.storyboard */; };
 		E6F66AFD2AD45F9000B8C74E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F66AFC2AD45F9000B8C74E /* main.m */; };
 		E6F66B072AD462FB00B8C74E /* Matematicas.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F66B052AD462FB00B8C74E /* Matematicas.m */; };
+		E6F66B092AD5B7C300B8C74E /* October Crow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6F66B082AD5B7C300B8C74E /* October Crow.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E6F66AFC2AD45F9000B8C74E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6F66B052AD462FB00B8C74E /* Matematicas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matematicas.m; sourceTree = "<group>"; };
 		E6F66B062AD462FB00B8C74E /* Matematicas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matematicas.h; sourceTree = "<group>"; };
+		E6F66B082AD5B7C300B8C74E /* October Crow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "October Crow.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E6F66AEA2AD45F8E00B8C74E /* AppDelegate.h */,
 				E6F66AEB2AD45F8E00B8C74E /* AppDelegate.m */,
 				E6F66AED2AD45F8E00B8C74E /* SceneDelegate.h */,
+				E6F66B082AD5B7C300B8C74E /* October Crow.ttf */,
 				E6F66AEE2AD45F8E00B8C74E /* SceneDelegate.m */,
 				E6F66AF02AD45F8E00B8C74E /* ViewController.h */,
 				E6F66AF12AD45F8E00B8C74E /* ViewController.m */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F66AFA2AD45F9000B8C74E /* LaunchScreen.storyboard in Resources */,
+				E6F66B092AD5B7C300B8C74E /* October Crow.ttf in Resources */,
 				E6F66AF72AD45F9000B8C74E /* Assets.xcassets in Resources */,
 				E6F66AF52AD45F8E00B8C74E /* Main.storyboard in Resources */,
 			);

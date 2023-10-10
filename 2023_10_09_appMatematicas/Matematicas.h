@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Propuesta de solución para regresar el resultado a traves de un parametro */
 
-- (void)multiplya:(NSNumber *)a withB:(NSNumber *)b resultadoEn:(NSNumber **)resul;
+//- (void)multiplya:(NSNumber *)a withB:(NSNumber *)b resultadoEn:(NSNumber **)resul;
 
 - (void)multiplyAa:(NSNumber *)a withB:(NSNumber *)b resultadoEn:(double *)resul;
 

@@ -60,11 +60,20 @@
                                 <rect key="frame" x="20" y="333" width="52" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="x^y"/>
+                                <connections>
+                                    <action selector="botonPotencia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xa5-H9-DKc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esg-w4-L7W">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esg-w4-L7W">
                                 <rect key="frame" x="80" y="333" width="49" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="cc3-eT-E9q"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="n!"/>
+                                <connections>
+                                    <action selector="botonFactorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHk-MV-rP7"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kLw-6Z-rOI">
                                 <rect key="frame" x="137" y="151" width="259" height="30"/>
@@ -80,12 +89,11 @@
                         <constraints>
                             <constraint firstItem="UYN-Cj-G1v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="548-zI-JHC"/>
                             <constraint firstItem="pfU-iE-9aU" firstAttribute="top" secondItem="6ix-G9-JsP" secondAttribute="bottom" constant="22" id="7Lb-xg-33c"/>
-                            <constraint firstItem="esg-w4-L7W" firstAttribute="leading" secondItem="yBA-Oz-ljB" secondAttribute="trailing" constant="8" id="BFP-W1-9xG"/>
-                            <constraint firstItem="esg-w4-L7W" firstAttribute="top" secondItem="yBA-Oz-ljB" secondAttribute="top" id="GeT-hc-M25"/>
                             <constraint firstItem="UYN-Cj-G1v" firstAttribute="trailing" secondItem="jug-tU-24p" secondAttribute="trailing" id="MAR-Gk-ArW"/>
                             <constraint firstItem="yBA-Oz-ljB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MNm-kq-JaP"/>
                             <constraint firstItem="6ix-G9-JsP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mzb-n0-EOh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLa-Tq-O0k" secondAttribute="trailing" constant="180" id="PlR-BU-BW8"/>
+                            <constraint firstItem="esg-w4-L7W" firstAttribute="leading" secondItem="yBA-Oz-ljB" secondAttribute="trailing" constant="8" id="Q8X-q4-PQE"/>
                             <constraint firstItem="6ix-G9-JsP" firstAttribute="top" secondItem="kLw-6Z-rOI" secondAttribute="top" constant="-61" id="Qg1-sj-35a"/>
                             <constraint firstItem="kLw-6Z-rOI" firstAttribute="leading" secondItem="6ix-G9-JsP" secondAttribute="trailing" constant="22" id="QqL-jw-aFv"/>
                             <constraint firstItem="yBA-Oz-ljB" firstAttribute="leading" secondItem="pfU-iE-9aU" secondAttribute="leading" id="RFK-KN-Y2J"/>
@@ -96,7 +104,7 @@
                             <constraint firstItem="6ix-G9-JsP" firstAttribute="trailing" secondItem="pfU-iE-9aU" secondAttribute="trailing" id="ctf-xR-sps"/>
                             <constraint firstItem="kLw-6Z-rOI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="efH-qN-gBg"/>
                             <constraint firstItem="LLa-Tq-O0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-20" id="gSX-2e-3pM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="esg-w4-L7W" secondAttribute="bottom" constant="494" id="jJ4-Ja-CcM"/>
+                            <constraint firstItem="esg-w4-L7W" firstAttribute="baseline" secondItem="yBA-Oz-ljB" secondAttribute="baseline" id="kA5-kN-miA"/>
                             <constraint firstItem="kLw-6Z-rOI" firstAttribute="leading" secondItem="LLa-Tq-O0k" secondAttribute="leading" constant="-1" id="oA0-vS-U5Q"/>
                             <constraint firstItem="6ix-G9-JsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="oJD-Ga-drg"/>
                             <constraint firstItem="UYN-Cj-G1v" firstAttribute="top" secondItem="pfU-iE-9aU" secondAttribute="bottom" constant="43" id="q5c-DO-anu"/>
