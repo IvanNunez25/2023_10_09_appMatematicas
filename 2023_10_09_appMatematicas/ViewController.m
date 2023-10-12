@@ -159,6 +159,16 @@
 }
 
 - (IBAction)botonPrimo:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    NSString *mensaje = [[NSString alloc] init];
+    if([mat esPrimo:[_textoNum1.text intValue]])
+        mensaje = @"Es primo";
+    else
+        mensaje = @"No es primo";
+    
+    _labelResultado2.text = mensaje;
 }
 
 - (IBAction)botonPI:(UIButton *)sender {
