@@ -101,7 +101,19 @@
     return f;
 }
 
-/* Uso de seno, cosemo y tangente */
+/* Uso de seno, coseno y tangente */
+
+- (double) seno: (double) numero {
+    return sin(numero);
+}
+
+- (double) coseno: (double) numero {
+    return cos(numero);
+}
+
+- (double) tangente: (double) numero {
+    return tan(numero);
+}
 
 - (double) calcularCatetoOpuesto: (double)angulo hipotenusa: (double)hip{
     return hip * sin(angulo);

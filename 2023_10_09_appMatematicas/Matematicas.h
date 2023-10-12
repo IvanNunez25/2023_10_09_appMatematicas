@@ -43,6 +43,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Seno, coseno, tangente */
 
+- (double) seno: (double) numero;
+
+- (double) coseno: (double) numero;
+
+- (double) tangente: (double) numero;
+
 - (double) calcularCatetoOpuesto: (double)angulo hipotenusa: (double)hip;
 
 - (double) calcularCatetoAdyacente: (double)angulo hipotenusa: (double)hip;

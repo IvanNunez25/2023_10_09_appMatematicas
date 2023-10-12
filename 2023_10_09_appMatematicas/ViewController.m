@@ -74,6 +74,8 @@
     
     _labelResultado1.text = [NSString stringWithFormat:@"%d", factorial];
     
+    
+    
 }
 
 - (IBAction)botonPotencia:(UIButton *)sender {
@@ -84,8 +86,85 @@
     /* Sin redondear */
     self.labelResultado1.text =[NSString stringWithFormat:@"%lf", potencia];
     
-    /* Redondeado */
+    /* Redondeado
     _labelResultado2.text = [NSString stringWithFormat:@"%0.0f", potencia];
+     */
+}
+
+- (IBAction)botonAlerta:(UIButton *)sender {
+    
+    UIAlertController *alerta = [UIAlertController alertControllerWithTitle:@"Alert en iOS" message:@"Mensaje de Alerta" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *accionDefault = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){}];
+    
+    [alerta addAction: accionDefault];
+    
+    [self presentViewController:alerta animated:YES completion:nil];
+}
+
+- (IBAction)botonSuma:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    NSNumber *suma = [mat sumar:[NSNumber numberWithDouble:[_textoNum1.text doubleValue]] withB:[NSNumber numberWithDouble:[_textoNum2.text doubleValue]]];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%@", suma];
+}
+
+- (IBAction)botonResta:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    NSNumber *resta = [mat restar:[NSNumber numberWithDouble:[_textoNum1.text doubleValue]] withB:[NSNumber numberWithDouble:[_textoNum2.text doubleValue]]];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%@", resta];
+}
+
+- (IBAction)botonMultiplicacion:(id)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    NSNumber *resultado = [mat multiplyA:[NSNumber numberWithDouble:[_textoNum1.text doubleValue]] withB:[NSNumber numberWithDouble:[_textoNum2.text doubleValue]]];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%@", resultado];
+}
+
+- (IBAction)botonDivision:(id)sender {
+    
+    double division = [_textoNum1.text doubleValue] / [_textoNum2.text doubleValue];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%f", division];
     
 }
+
+- (IBAction)botonSeno:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%f", [mat seno:[_textoNum1.text doubleValue]]];
+}
+
+- (IBAction)botonCoseno:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%f", [mat coseno:[_textoNum1.text doubleValue]]];
+}
+
+- (IBAction)botonTangente:(UIButton *)sender {
+    
+    Matematicas *mat = [[Matematicas alloc] init];
+    
+    _labelResultado1.text = [NSString stringWithFormat:@"%f", [mat tangente:[_textoNum1.text doubleValue]]];
+}
+
+- (IBAction)botonPrimo:(UIButton *)sender {
+}
+
+- (IBAction)botonPI:(UIButton *)sender {
+}
+
+- (IBAction)botonEuler:(UIButton *)sender {
+}
+
 @end
